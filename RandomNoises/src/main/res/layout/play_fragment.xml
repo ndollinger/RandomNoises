@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/play_button"
+        android:text="@string/start_button_label"
+        android:textSize="30sp"
+        android:background="@drawable/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/stop_button"
+        android:text="@string/stop_button_label"
+        android:textSize="30sp"
+        android:background="@drawable/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/play_button"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_indicator"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/play_button"
+        android:contentDescription="@string/play_indicator_desc"/>
+
+</RelativeLayout>
